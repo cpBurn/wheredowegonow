@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-input-wrapper {
+  display: flex;
+}
+
+.login-input {
+  margin: 10px;
+}
+
+.warning {
+  color: darkred;
+}
+
+.content {
+  opacity: 0;
+  color: purple;
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 1s;
+}
+
+.content-animate {
+  opacity: 1;
+}
