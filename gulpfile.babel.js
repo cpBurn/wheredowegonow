@@ -80,9 +80,7 @@ gulp.task('copy', [
   'copy:index.html',
   'copy:jquery',
   'copy:license',
-  'copy:main.css',
   'copy:misc',
-  'copy:normalize'
 ]);
 
 gulp.task('copy:.htaccess', () =>
@@ -137,7 +135,6 @@ gulp.task('copy:misc', () =>
 
     // Exclude the following files
     // (other tasks will handle the copying of these files)
-    `!${dirs.src}/css/main.css`,
     `!${dirs.src}/index.html`
 
   ], {
@@ -167,6 +164,8 @@ gulp.task('lint:js', () =>
     `${dirs.src}/js/*.js`,
     `${dirs.test}/*.js`
   ]).pipe(plugins().jscs())
+    .pipe(plugins().eslint())
+    .pipe(plugins().eslint.failOnError())
 );
 
 

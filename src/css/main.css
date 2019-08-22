@@ -29,8 +29,17 @@
   color: purple;
   transition: opacity 0.5s ease-in-out;
   transition-delay: 1s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
 }
 
 .content-animate {
   opacity: 1;
+}
+
+.app {
+  width: 100%;
 }

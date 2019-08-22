@@ -26,8 +26,10 @@ $('#warning').fadeOut(0);
       mappedValues[PASS3_NAME] === PASS3 &&
       mappedValues[PASS4_NAME] === PASS4
     ) {
-      $('#login').fadeOut(200);
-      $('#content').addClass('content-animate');
+      $('#login').fadeOut(200, function () {
+        $('#content').addClass('content-animate');
+      });
+
     } else {
       $('#warning').fadeIn(200);
     }
