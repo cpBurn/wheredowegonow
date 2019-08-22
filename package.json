@@ -45,7 +45,7 @@
     }
   },
   "license": "MIT",
-  "name": "Do you know where we go?",
+  "name": "wheredowegonow",
   "scripts": {
     "build": "gulp build",
     "test": "gulp archive && mocha --require babel-core/register --reporter spec --timeout 5000"

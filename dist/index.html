@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Do you know where we go?</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,7 +11,6 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -23,19 +22,58 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <div class="app">
+    <form id="login" class="login-wrapper">
+      <h4>I hope you know where to find the code! ;)</h4>
+      <div class="login-input-wrapper">
+        <input type="password" class="login-input" name="pass1" />
+        <input type="password" class="login-input" name="pass2" />
+        <input type="password" class="login-input" name="pass3" />
+        <input type="password" class="login-input" name="pass4" />
+      </div>
+      <button>Show the secret</button>
+      <div id="warning" class="warning">Are you sure this is the right code? :)</div>
+    </form>
+    <div id="content" class="content">
+      <p>
+      It seems you are very curious and impatient to what’s gonna happen<br/>
+      As I said… trust me as you did 1 year ago on the first birthday I prepared for you.<br/>
+      Funny, I just realised that when I started planning your last birthday, we were still just friends…<br/>
+      </p>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+      <p>Things changed huh?</p>
+
+      <p>
+      I remember talking to you that birthday is just a thing, you never really celebrated it<br/>
+      But not for me… I’m a very happy person because 20 years ago you were born.<br/>
+      And I told myself you should have a special birthday, because you are very special.<br/>
+      </p>
+
+      <p>
+      It is a humble, but very honest gift I have.<br/>
+      Rather than things I decided to give you something to breathe<br/>
+      To see and remember<br/>
+      </p>
+
+
+      <p>Are you ready for a little adventure?</p>
+
+      <p>
+      Look at the nightstand on your side of the bed.<br/>
+      Open the little door carefully and you will find something I bought for you..<br/>
+      Inside, there’s a little something I wrote and more instructions.<br/>
+      </p>
+
+      <p>
+      I love you a lot ;*
+      </p>
+    </div>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

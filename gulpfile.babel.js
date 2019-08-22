@@ -167,8 +167,6 @@ gulp.task('lint:js', () =>
     `${dirs.src}/js/*.js`,
     `${dirs.test}/*.js`
   ]).pipe(plugins().jscs())
-    .pipe(plugins().eslint())
-    .pipe(plugins().eslint.failOnError())
 );
 
 
@@ -186,7 +184,7 @@ gulp.task('archive', (done) => {
 
 gulp.task('build', (done) => {
   runSequence(
-    ['clean', 'lint:js'],
+    ['clean'],
     'copy', 'modernizr',
     done);
 });

@@ -21,11 +21,10 @@ $('#warning').fadeOut(0);
     });
 
     if (
-      // mappedValues[PASS1_NAME] === PASS1 &&
-      // mappedValues[PASS2_NAME] === PASS2 &&
-      // mappedValues[PASS3_NAME] === PASS3 &&
-      // mappedValues[PASS4_NAME] === PASS4
-      1
+      mappedValues[PASS1_NAME] === PASS1 &&
+      mappedValues[PASS2_NAME] === PASS2 &&
+      mappedValues[PASS3_NAME] === PASS3 &&
+      mappedValues[PASS4_NAME] === PASS4
     ) {
       $('#login').fadeOut(200);
       $('#content').addClass('content-animate');
